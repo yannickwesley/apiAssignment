@@ -21,6 +21,8 @@ mongoose.connect(uri, options)
     console.log("Connecté à la base MongoDB assignments dans le cloud !");
     console.log("at URI = " + uri);
     console.log("vérifiez with http://localhost:8010/api/assignments que cela fonctionne")
+    console.log("vérifiez with http://localhost:8010/api/connections que cela fonctionne")
+
     },
     err => {
       console.log('Erreur de connexion: ', err);
@@ -45,6 +47,9 @@ const prefix = '/api';
 
 app.route(prefix + '/assignments')
   .get(assignment.getAssignments);
+
+app.route(prefix + '/connections')
+  .get(connection.getConnections);
 
 app.route(prefix + '/assignments/:id')
   .get(assignment.getAssignment)
