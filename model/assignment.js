@@ -10,7 +10,7 @@ let AssignmentSchema = Schema({
     matiere: String,
     imageMat: String,
     imageProf: String,
-    note: Number,
+    note: String,
     remarques: String
 
 });
