@@ -31,6 +31,7 @@ function postAssignment(req, res){
     assignment.nomEleve = req.body.nomEleve;
     assignment.matiere = req.body.matiere;
     assignment.imageMat = req.body.imageMat;
+    assignment.imageProf = req.body.imageProf;
     assignment.note = req.body.note;
     assignment.remarques = req.body.remarques;
 
